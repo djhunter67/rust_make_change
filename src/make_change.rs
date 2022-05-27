@@ -15,37 +15,37 @@ impl Coins {
     }
 
     pub fn make_quarters(&self, change: u32) -> u32 {
-        const one_quarter: u32 = 25;
-        &change / &one_quarter
+        const ONE_QUARTER: u32 = 25;
+        &change / &ONE_QUARTER
     }
 
     pub fn after_quarters(&self, change: u32, num_of_quarters: u32) -> u32 {
-        const one_quarter: u32 = 25;
-        &change - &num_of_quarters * &one_quarter
+        const ONE_QUARTER: u32 = 25;
+        &change - &num_of_quarters * &ONE_QUARTER
     }
 
     pub fn make_dimes(&self, rem_change: u32) -> u32 {
-        const one_dime: u32 = 10;
-        &rem_change / &one_dime
+        const ONE_DIME: u32 = 10;
+        &rem_change / &ONE_DIME
     }
 
     pub fn after_dimes(&self, rem_change: u32, num_of_dimes: u32) -> u32 {
-        const one_dime: u32 = 10;
-        &rem_change - &num_of_dimes * &one_dime
+        const ONE_DIME: u32 = 10;
+        &rem_change - &num_of_dimes * &ONE_DIME
     }
 
     pub fn make_nickels(&self, rem_change: u32) -> u32 {
-        const one_nickel: u32 = 5;
-        &rem_change / &one_nickel
+        const ONE_NICKEL: u32 = 5;
+        &rem_change / &ONE_NICKEL
     }
 
     pub fn after_nickels(&self, rem_change: u32, num_of_nickels: u32) -> u32 {
-        const one_nickel: u32 = 5;
-        &rem_change - &num_of_nickels * &one_nickel
+        const ONE_NICKEL: u32 = 5;
+        &rem_change - &num_of_nickels * &ONE_NICKEL
     }
 
     pub fn make_pennies(&self, rem_change: u32) -> u32 {
-        const one_penny: u32 = 1;
-        &rem_change / &one_penny
+        const ONE_PENNY: u32 = 1;
+        &rem_change / &ONE_PENNY
     }
 }
