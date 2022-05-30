@@ -35,6 +35,9 @@ fn main() {
     println!("\nQuarters: {}", quarter_count);
     println!("Dimes: {}", dime_cnt);
     println!("Nickels: {}", nickel_cnt);
-    println!("Pennies: {}", penny_cnt);
-
+    if penny_cnt != 1 {
+        println!("Pennies: {}", penny_cnt);
+    } else {
+        println!("Penny: {}", penny_cnt);
+    }
 }
